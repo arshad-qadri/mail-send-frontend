@@ -1,0 +1,5 @@
+.tox:not(.tox-tinymce-inline)
+  .tox-editor-header:not(.tox-editor-dock-transition),
+.tox-statusbar {
+  display: none !important;
+}
