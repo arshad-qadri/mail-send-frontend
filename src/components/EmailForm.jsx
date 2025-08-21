@@ -10,13 +10,14 @@ const EmailForm = () => {
     to: "",
     subject: "Application for Frontend Developer Position - Arshad Qadri",
     text: `Dear Hiring Manager,<br><br>
-            I hope you're doing well. My name is Arshad Qadri, and I am interested in applying for the Frontend Developer / React Developer / Next.js Developer position. With 3.5 years of experience in frontend technologies like React, Next.js, and some experience in Node.js for building APIs, I am confident in my ability to contribute effectively to your team.<br><br>
-            I am passionate about building efficient, user-friendly web applications and would love the opportunity to be a part of your team. Please find my resume attached for further details.<br><br>
-            Looking forward to your response.<br>
-            Best Regards, <br>
-            Arshad Qadri <br>
-            Contact : 8007330423 <br>
-            Email : arshadqadri321@gmail.com`,
+           I hope you're doing well. My name is Arshad Qadri, and I am interested in applying for the Frontend Developer / React Developer / Next.js Developer position. With 3.8 years of relevant experience in frontend technologies like React, Next.js, and some experience in Node.js for building APIs, I am confident in my ability to contribute effectively to your team.<br><br>
+           I am an immediate joiner and passionate about building efficient, user-friendly web applications. I would love the opportunity to be a part of your team. Please find my resume attached for further details.<br><br>
+           Looking forward to your response.<br>
+           Best Regards,<br>
+           Arshad Qadri<br>
+           Contact: 8007330423<br>
+           Email: arshadqadri321@gmail.com
+           `,
     resume: null,
   });
   const [loading, setLoading] = useState(false);
