@@ -44,6 +44,9 @@ const EmailForm = () => {
       const res = await fetch(`${baseUrl}/api/email/send-email`, {
         method: "POST",
         body: data,
+        headers: {
+          authorization: "Bearer " + localStorage.getItem("token"),
+        },
       });
 
       const result = await res.json();
