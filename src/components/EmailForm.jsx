@@ -63,18 +63,21 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 flex-col">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 ">
       <ToastContainer position="top-center" autoClose={3000} />
-      <button
-        className="px-4 py-1 bg-blue-500 text-white rounded mb-2 ml-auto cursor-pointer"
-        onClick={() => {
-          localStorage.removeItem("token");
-          window.location.reload();
-        }}
-      >
-        Logout
-      </button>
       <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-[1200px]">
+        <div className="flex justify-end items-center">
+          {" "}
+          <button
+            className="px-4 py-1 bg-blue-500 text-white rounded mb-2 cursor-pointer float-right"
+            onClick={() => {
+              localStorage.removeItem("token");
+              window.location.reload();
+            }}
+          >
+            Logout
+          </button>
+        </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4">
             <div>
