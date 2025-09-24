@@ -4,5 +4,6 @@ const environments = {
 };
 // [local, production]
 const environment = "production";
+// const environment = "local";
 
 export const baseUrl = environments[environment];

@@ -3,9 +3,12 @@ import React from "react";
 import "./index.css";
 import "./App.css";
 import EmailForm from "./components/EmailForm";
+import LoginPage from "./components/Login";
 
 function App() {
-  return <EmailForm />;
+  const token = localStorage.getItem("token");
+  if (token) return <EmailForm />;
+  else return <LoginPage />;
 }
 
 export default App;
